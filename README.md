@@ -13,6 +13,57 @@ This project is a **Node.js** application that leverages the **Google Gemini API
 
 ---
 
+## Steps to Integrate the Gemini API and Build the Application
+1. Project Initialization
+
+- Created a new project folder using:
+mkdir gemini-prompt-generator
+cd gemini-prompt-generator
+
+2. Node.js Project Setup
+
+- Initialized a new Node.js project using:
+npm init -y
+
+3. Installed Dependencies
+
+- Installed required packages:
+npm install @google/generative-ai dotenv readline fs
+
+4. Created Project Files
+
+- Created the following files:
+index.js – Main code file
+.env – For storing the Gemini API key securely
+
+5. Added API Key
+
+- In the .env file, added the API key:
+GEMINI_API_KEY=your_gemini_api_key_here
+
+6. Configured package.json for ES6 Modules
+
+- Added "type": "module" in package.json:
+
+{
+  "type": "module"
+}
+
+7. Developed the Code
+
+- Implemented the code in index.js to:
+✅ Accept user input
+✅ Generate text using the Gemini API
+✅ Save both user prompt and AI response to output.txt
+
+8. Tested the Application
+
+- Ran the application using:
+node index.js
+- Verified that the AI-generated content appeared both in the terminal and in output.txt.
+
+---
+
 ## 🛠️ Installation
 
 1. **Clone the Repository**
